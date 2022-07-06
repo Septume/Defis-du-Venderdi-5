@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 5%;
+}
+div.onoff {
+  position: relative;
+  display: inline-block;
+  bottom: -9px;
+  background-color: gray;
+  width: 20px;
+  height: 8px;
+  transform: translateX(40px);
+}
+div.onoff::after {
+  content: "";
+  position: absolute;
+  background-color: gray;
+  width: 8px;
+  height: 8px;
+  top: -40%;
+  left: calc((50% - 4px));
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+div.onoff2 {
+  position: relative;
+  display: inline-block;
+  bottom: -9px;
+  background-color: gray;
+  width: 20px;
+  height: 8px;
+  transform: translateX(20px);
+}
+div.onoff2::after {
+  content: "";
+  position: absolute;
+  background-color: gray;
+  width: 8px;
+  height: 8px;
+  top: -40%;
+  left: calc((50% - 4px));
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+section.game_boy {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background-color: red;
+  border-radius: 5px 5px 10% 5px;
+}
+
+.game_boy .ecran_contour {
+  position: relative;
+  top: 25px;
+  left: 25px;
+  height: 280px;
+  width: 350px;
+  background-color: #3b3e3b;
+  border-radius: 5px 5px 10% 5px;
+}
+
+.game_boy .ecran_contour .on {
+  position: relative;
+  margin: 3px;
+  height: 5px;
+  width: 5px;
+  background-color: #c11323;
+  border-radius: 50%;
+  top: 40%;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #9d9d9f;
+  display: flex;
+}
+
+.game_boy .ecran_contour .on .rond {
+  position: relative;
+  top: 3px;
+  left: 4px;
+  color: #9d9d9f;
+  transform: rotate(195deg);
+}
+
+.game_boy .ecran_contour .on p {
+  position: absolute;
+  transform: translateY(12px);
+  left: -2px;
+}
+
+.game_boy .ecran_contour .ecran {
+  position: relative;
+  height: 200px;
+  width: 280px;
+  background-color: #949b77;
+  border-radius: 5px;
+  left: 11%;
+  top: calc(45% - 100px);
+}
+.game_boy .ecran_contour h2 {
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 3%;
+  left: 10%;
+  color: #9d9d9f;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.game_boy .ecran_contour h2 span {
+  background-color: #9d9d9f;
+  padding: 3px 1px 0px 1px;
+  font-size: 12px;
+  color: #3b3e3b;
+  text-transform: lowercase;
+  margin-left: 5px;
+}
+
+.game_boy .nintendo {
+  position: absolute;
+  top: 53%;
+  left: calc(50% - 60px);
+  color: white;
+  border: solid 1px;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+.game_boy .boutons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  bottom: -100px;
+  height: 200px;
+  width: 400px;
+}
+
+.game_boy .boutons .croix {
+  position: relative;
+  top: 30px;
+  left: 20px;
+  height: 60px;
+  width: 60px;
+  color: #464c3a;
+}
+
+.game_boy .boutons .croix .ligne {
+  position: relative;
+  background-color: #6c6b6b;
+  height: 20px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.game_boy .boutons .croix .ligne .gauche {
+  cursor: pointer;
+}
+.game_boy .boutons .croix .ligne .droite {
+  cursor: pointer;
+}
+
+.game_boy .boutons .croix .ligne div {
+  padding: 0 5px;
+}
+
+.game_boy .boutons .croix .haut {
+  position: relative;
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  background-color: #6c6b6b;
+  text-align: center;
+  border-radius: 3px 3px 0 0;
+  cursor: pointer;
+}
+
+.game_boy .boutons .croix .bas {
+  position: relative;
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: #6c6b6b;
+  text-align: center;
+  border-radius: 0 0 3px 3px;
+}
+
+.game_boy .boutons .ronds {
+  position: relative;
+  top: 25px;
+  right: 25px;
+  height: 80px;
+  width: 80px;
+  font-size: larger;
+  color: #464c3a;
+  font-weight: 700;
+}
+
+.game_boy .boutons .ronds .btn_a {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #6c6b6b;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.game_boy .boutons .ronds .btn_a::after {
+  position: absolute;
+  content: "B";
+  bottom: -25px;
+  right: calc(50% - 7px);
+}
+
+.game_boy .boutons .ronds .btn_b {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #6c6b6b;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+.game_boy .boutons .ronds .btn_b::after {
+  position: absolute;
+  content: "A";
+  bottom: -25px;
+  right: calc(50% - 7px);
+}
+
+.game_boy .boutons .btn_bas {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 60px);
+  height: 30px;
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.game_boy .boutons .btn_bas div {
+  width: 50px;
+  height: 5px;
+  background-color: #6c6b6b;
+  border-radius: 5px;
+  color: #3b3e3b;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.game_boy .boutons .btn_bas .start::after {
+  content: "start";
+  position: absolute;
+  top: 8px;
+  left: 7px;
+}
+.game_boy .boutons .btn_bas .select::after {
+  content: "select";
+  position: absolute;
+  top: 8px;
+  right: 3px;
+}
